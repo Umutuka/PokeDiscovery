@@ -32,7 +32,7 @@ const EvolutionChain = ({ id, evolutionChainUrl }) => {
     const pokemon = {
       name: name,
       imageUrl: imageUrl,
-      imageId: imageId
+      imageId: imageId,
     };
 
     if (chain.evolves_to.length === 0) {
@@ -41,18 +41,16 @@ const EvolutionChain = ({ id, evolutionChainUrl }) => {
 
     return {
       ...pokemon,
-      evolvesTo: chain.evolves_to.map((evolution) =>
-        getEvolutionChainRecursive(evolution)
-      ),
+      evolvesTo: chain.evolves_to.map((evolution) => getEvolutionChainRecursive(evolution)),
     };
   };
 
   const PokemonCard = ({ name, imageUrl, imageId }) => {
     return (
       <div className="flex rounded-lg hover:animate-bounce mb-2 shadow-xl items-center">
-        <Link to={`/${imageId}`}>
-        <img className="w-52 h-52" src={imageUrl} alt={name} />
-        <p className="ml-2 text-lg font-bold">{name}</p>
+        <Link to={`/PokeDiscovery/${imageId}`}>
+          <img className="w-52 h-52" src={imageUrl} alt={name} />
+          <p className="ml-2 text-lg font-bold">{name}</p>
         </Link>
       </div>
     );
@@ -62,11 +60,7 @@ const EvolutionChain = ({ id, evolutionChainUrl }) => {
     return (
       <div key={pokemon.name} className="flex flex-col">
         <PokemonCard name={pokemon.name} imageUrl={pokemon.imageUrl} imageId={pokemon.imageId} />
-        {pokemon.evolvesTo && (
-          <div className="ml-20">
-            {pokemon.evolvesTo.map((evolution) => renderPokemon(evolution))}
-          </div>
-        )}
+        {pokemon.evolvesTo && <div className="ml-20">{pokemon.evolvesTo.map((evolution) => renderPokemon(evolution))}</div>}
       </div>
     );
   };
