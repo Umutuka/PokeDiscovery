@@ -31,7 +31,7 @@ const App = () => {
         <QueryClientProvider client={queryClient}>
           <Navbar />
           <Routes>
-            <Route path="/PokeDiscovery" element={<Index />} />
+            <Route path="/PokeDiscovery/" element={<Index />} />
             <Route path="/PokeDiscovery/Abilities" element={<Abilities />} />
             <Route path="/PokeDiscovery/Abilities/:id" element={<AbilityDetails />} />
             <Route path="/PokeDiscovery/pokedex" element={<Pokedex />} />
