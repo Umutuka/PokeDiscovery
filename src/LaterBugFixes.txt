@@ -1,0 +1,21 @@
+Bugs Found (Last Updated 15/04/2023):
+
+1 - Navbar has transparency Issues on the website(global issue)
+2 - Pokedex Routing issue (Refresh crashes website - Wrong Routing Naming?)
+3 - Item List has Rendering problem
+
+Work to be done (Last Updated 13/04/2023):
+2 - Pokedex Category.
+4 - Login etc is the backend stuff.
+
+
+Extra Unused/Broken Code:
+
+          <dl className="features p-5 text-2xl">
+            <dt className="">Game list </dt>
+            <dd className="pl-10">- Where to Buy/Download</dd>
+            <dt>Fanmade games</dt>
+            <dd className="pl-10">- Relevant Information on fanmade games</dd>
+            <dt>W.I.P</dt>
+            <dd className="pl-10">- !? More Information soon to come !?</dd>
+          </dl>
