@@ -52,9 +52,9 @@ const About = () => {
             </p>
             <img className="mx-auto my-auto mt-16" src="https://drive.google.com/uc?export=view&id=1atw9lGLmngYBQsN1vp8DK3VXr4hwzYNP"></img>
             <section className="flex justify-center m-10 items-center">
-              <img className="w-56" src="Pictures/react-logo.png"></img>
-              <img className="w-56" src="Pictures/Tailwind_CSS_Logo.png"></img>
-              <img className="w-56" src="Pictures/vite-logo.png"></img>
+              <img className="w-56" src="https://drive.google.com/uc?export=view&id=1xOxxRJCZKHVO6fC9wzoOXcKcRrXgv5Wj"></img>
+              <img className="w-56" src="https://drive.google.com/uc?export=view&id=1CuctT_7GZY7r6Sbo7tZPVX-F639n8Noi"></img>
+              <img className="w-56" src="https://drive.google.com/uc?export=view&id=1FqYawlm33KMu8b7i8NtQuWN6Q3vX32j2"></img>
             </section>
           </div>
 

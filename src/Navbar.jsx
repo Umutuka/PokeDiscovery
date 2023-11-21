@@ -65,7 +65,7 @@ const Navbar = () => {
 
       <div className={!nav ? "fixed left-0 z-10 top-0 w-70% md:w-1/3 border-r border-r-gray-900 bg-[#000000] duration-500 ease-in-out" : "fixed left-[-100%]"}>
         <h1 className="m-4 flex w-full text-3xl font-mono font-bold text-white">
-          <img src="/Pictures/pokemon-icon.png" className="w-10 h-10"></img>
+          <img src="https://drive.google.com/uc?export=view&id=1CIJ0_IlNvXJOo74VYgEqPzKvZ6pLHdnS" className="w-10 h-10"></img>
           PokeDiscovery
         </h1>
         <ul className="p-4 uppercase ">
