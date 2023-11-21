@@ -1,5 +1,5 @@
 PokeDiscovery
-Link to Website: [https://umutuka.github.io/Weather-App/](https://pokediscovery.netlify.app/)
+Link to Website: (https://pokediscovery.netlify.app/)
 
 <img src="https://drive.google.com/uc?export=view&id=1oAAcsqP0ShSNzxF7wF68Mjr7hiMOnLcO" alt="Umutukas Spying Weather App" width="800" />
 
