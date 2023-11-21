@@ -32,7 +32,7 @@ const ItemDetails = () => {
     console.log({ id });
   }, []);
 
-  if (isLoading) return <img src="/Pictures/loading-icon.png" className="animate-spin block m-56 ml-auto mr-auto w-1/2"></img>;
+  if (isLoading) return <img src="https://drive.google.com/uc?export=view&id=1mSItftGDMZL57v0mloTsSLbuBv9NM_0I" className="animate-spin block m-56 ml-auto mr-auto w-1/2"></img>;
 
   if (error) return <p>Error: {error.message}</p>;
 
@@ -48,16 +48,16 @@ const ItemDetails = () => {
         <div>
           {item.id - 1 > 0 ? (
             <div className="relative">
-              <Link to={`/PokeDiscovery/items/${item.id - 1}`} className="before-dex font-bold hover:bg-slate-500 p-2 rounded-lg float-left">
+              <Link to={`/items/${item.id - 1}`} className="before-dex font-bold hover:bg-slate-500 p-2 rounded-lg float-left">
                 <p> {"<= #" + (item.id - 1) + " " + previousItem.name.charAt(0).toUpperCase() + previousItem.name.slice(1)}</p>
               </Link>
 
-              <Link to={`/PokeDiscovery/items/${item.id + 1}`} className="before-dex font-bold hover:bg-slate-500 p-2 rounded-lg float-right">
+              <Link to={`/items/${item.id + 1}`} className="before-dex font-bold hover:bg-slate-500 p-2 rounded-lg float-right">
                 <p>{"#" + (item.id + 1) + " " + nextItem.name.charAt(0).toUpperCase() + nextItem.name.slice(1) + "=>"}</p>
               </Link>
             </div>
           ) : (
-            <Link to={`/PokeDiscovery/items/${item.id + 1}`} className="before-dex font-bold hover:bg-slate-500 p-2 rounded-lg float-right">
+            <Link to={`/items/${item.id + 1}`} className="before-dex font-bold hover:bg-slate-500 p-2 rounded-lg float-right">
               <p> {"# " + (item.id + 1) + " " + nextItem.name.charAt(0).toUpperCase() + nextItem.name.slice(1) + "=>"}</p>
             </Link>
           )}

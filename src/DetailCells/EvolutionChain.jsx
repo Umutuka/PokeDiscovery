@@ -48,7 +48,7 @@ const EvolutionChain = ({ id, evolutionChainUrl }) => {
   const PokemonCard = ({ name, imageUrl, imageId }) => {
     return (
       <div className="flex rounded-lg hover:animate-bounce mb-2 shadow-xl items-center">
-        <Link to={`/PokeDiscovery/${imageId}`}>
+        <Link to={`/${imageId}`}>
           <img className="w-52 h-52" src={imageUrl} alt={name} />
           <p className="ml-2 text-lg font-bold">{name}</p>
         </Link>

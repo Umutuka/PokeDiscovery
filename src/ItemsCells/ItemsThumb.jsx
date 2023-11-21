@@ -16,7 +16,7 @@ const ItemsThumb = ({ id, name, generation, sprite, attribute, description, _cal
       <td className="ability-generation text-center text-1xl">{description}</td>
 
       <td className="view text-center hover:bg-white hover:cursor-pointer">
-        <Link to={`/PokeDiscovery/items/${id}`}>Link</Link>
+        <Link to={`/items/${id}`}>Link</Link>
       </td>
     </tr>
   );

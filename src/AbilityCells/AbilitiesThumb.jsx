@@ -12,7 +12,7 @@ const AbilitiesThumb = ({ id, name, generation, short_effect, _callback }) => {
       <td className="ability-generation text-center text-2xl">{generation.slice(11, 14).toUpperCase()}</td>
 
       <td className="view p-16 text-center hover:bg-white">
-        <Link to={`/PokeDiscovery/Abilities/${id}`}>Link</Link>
+        <Link to={`/Abilities/${id}`}>Link</Link>
       </td>
     </tr>
   );

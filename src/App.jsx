@@ -31,16 +31,16 @@ const App = () => {
         <QueryClientProvider client={queryClient}>
           <Navbar />
           <Routes>
-            <Route path="/PokeDiscovery/" element={<Index />} />
-            <Route path="/PokeDiscovery/Abilities" element={<Abilities />} />
-            <Route path="/PokeDiscovery/Abilities/:id" element={<AbilityDetails />} />
-            <Route path="/PokeDiscovery/pokedex" element={<Pokedex />} />
-            <Route path="/PokeDiscovery/pokedex/:id" element={<Details />} />
-            <Route path="/PokeDiscovery/items" element={<Items />} />
-            <Route path="/PokeDiscovery/About" element={<About />} />
-            <Route path="/PokeDiscovery/items/:id" element={<ItemDetails />} />
-            <Route path="/PokeDiscovery/compare" element={<Compare />} />
-            <Route path="/PokeDiscovery/contact" element={<Contact />} />
+            <Route path="/" element={<Index />} />
+            <Route path="/Abilities" element={<Abilities />} />
+            <Route path="/Abilities/:id" element={<AbilityDetails />} />
+            <Route path="/pokedex" element={<Pokedex />} />
+            <Route path="/pokedex/:id" element={<Details />} />
+            <Route path="/items" element={<Items />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/items/:id" element={<ItemDetails />} />
+            <Route path="/compare" element={<Compare />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Additionals />

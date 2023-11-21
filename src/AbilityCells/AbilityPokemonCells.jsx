@@ -5,7 +5,7 @@ const AbilityPokemonCell = ({ id, name, _callback }) => {
   const newImageLink = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
   return (
-    <Link to={`/PokeDiscovery/pokedex/${id}`} className="pokemon">
+    <Link to={`/pokedex/${id}`} className="pokemon">
       <div className="p-5 hover:cursor-pointer hover:bg-white border rounded-lg bg-slate-300 justify-center items-center text-center">
         <div className="number">
           <small>#0{id}</small>

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const PokemonThumb = ({ id, image, name, type, _callback }) => {
   const style = type + " thumb-container";
   return (
-    <Link to={`/PokeDiscovery/pokedex/${id}`} className="pokemon">
+    <Link to={`/pokedex/${id}`} className="pokemon">
       <div className="p-5 hover:cursor-pointer hover:bg-white border rounded-lg bg-slate-300 justify-center items-center text-center">
         <div className="number">
           <small>#0{id}</small>

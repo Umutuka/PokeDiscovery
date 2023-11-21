@@ -4,15 +4,8 @@ import { useParams, Link } from "react-router-dom";
 import AbilityPokemonCell from "../AbilityCells/AbilityPokemonCells";
 
 const fetchAbility = async (id) => {
-  const previousAbilityResponse =
-    id - 1 > 0
-      ? await fetch(`https://pokeapi.co/api/v2/ability/${id - 1}/`).then(
-          (res) => res.json()
-        )
-      : null;
-  const nextAbilityResponse = await fetch(
-    `https://pokeapi.co/api/v2/ability/${Number(id) + 1}/`
-  ).then((res) => res.json());
+  const previousAbilityResponse = id - 1 > 0 ? await fetch(`https://pokeapi.co/api/v2/ability/${id - 1}/`).then((res) => res.json()) : null;
+  const nextAbilityResponse = await fetch(`https://pokeapi.co/api/v2/ability/${Number(id) + 1}/`).then((res) => res.json());
 
   const [abilityResponse, descriptionResponse] = await Promise.all([
     fetch(`https://pokeapi.co/api/v2/ability/${id}`).then((res) => res.json()),
@@ -34,26 +27,17 @@ const fetchAbility = async (id) => {
   return data;
 };
 
-
 const Details = () => {
   const { id } = useParams();
 
-  const { isLoading, error, data } = useQuery(["Ability", id], () =>
-    fetchAbility(id)
-  );
+  const { isLoading, error, data } = useQuery(["Ability", id], () => fetchAbility(id));
 
   useEffect(() => {
     console.log("dex component rendered");
     console.log({ id });
   }, []);
 
-  if (isLoading)
-    return (
-      <img
-        src="/Pictures/loading-icon.png"
-        className="animate-spin block m-56 ml-auto mr-auto w-1/2"
-      ></img>
-    );
+  if (isLoading) return <img src="https://drive.google.com/uc?export=view&id=1mSItftGDMZL57v0mloTsSLbuBv9NM_0I" className="animate-spin block m-56 ml-auto mr-auto w-1/2"></img>;
 
   if (error) return <p>Error: {error.message}</p>;
 
@@ -69,63 +53,27 @@ const Details = () => {
         <div>
           {ability.id - 1 > 0 ? (
             <div className="relative">
-              <Link
-                to={`/Abilities/${ability.id - 1}`}
-                className="before-dex font-bold hover:bg-slate-500 p-2 rounded-lg float-left"
-              >
-                <p>
-                  {" "}
-                  {"<= #" +
-                    (ability.id - 1) +
-                    " " +
-                    previousAbility.name.charAt(0).toUpperCase() +
-                    previousAbility.name.slice(1)}
-                </p>
+              <Link to={`/Abilities/${ability.id - 1}`} className="before-dex font-bold hover:bg-slate-500 p-2 rounded-lg float-left">
+                <p> {"<= #" + (ability.id - 1) + " " + previousAbility.name.charAt(0).toUpperCase() + previousAbility.name.slice(1)}</p>
               </Link>
 
-              <Link
-                to={`/Abilities/${ability.id + 1}`}
-                className="before-dex font-bold hover:bg-slate-500 p-2 rounded-lg float-right"
-              >
-                <p>
-                  {"#" +
-                    (ability.id + 1) +
-                    " " +
-                    nextAbility.name.charAt(0).toUpperCase() +
-                    nextAbility.name.slice(1) +
-                    "=>"}
-                </p>
+              <Link to={`/Abilities/${ability.id + 1}`} className="before-dex font-bold hover:bg-slate-500 p-2 rounded-lg float-right">
+                <p>{"#" + (ability.id + 1) + " " + nextAbility.name.charAt(0).toUpperCase() + nextAbility.name.slice(1) + "=>"}</p>
               </Link>
             </div>
           ) : (
-            <Link
-              to={`/Abilities/${ability.id + 1}`}
-              className="before-dex font-bold hover:bg-slate-500 p-2 rounded-lg float-right"
-            >
-              <p>
-                {" "}
-                {"# " +
-                  (ability.id + 1) +
-                  " " +
-                  nextAbility.name.charAt(0).toUpperCase() +
-                  nextAbility.name.slice(1) +
-                  "=>"}
-              </p>
+            <Link to={`/Abilities/${ability.id + 1}`} className="before-dex font-bold hover:bg-slate-500 p-2 rounded-lg float-right">
+              <p> {"# " + (ability.id + 1) + " " + nextAbility.name.charAt(0).toUpperCase() + nextAbility.name.slice(1) + "=>"}</p>
             </Link>
           )}
         </div>
       </nav>
 
       <div className="border rounded-lg m-5 bg-slate-500">
-        <h2 className="text-center text-2xl font-bold pb-5 underline">
-          Details
-        </h2>
+        <h2 className="text-center text-2xl font-bold pb-5 underline">Details</h2>
         <ul className="text-center space-y-5 text-3xl">
           <li> ID : {ability.id}</li>
-          <li>
-            {" "}
-            Generation : {ability.generation.name.slice(11, 14).toUpperCase()}
-          </li>
+          <li> Generation : {ability.generation.name.slice(11, 14).toUpperCase()}</li>
           <li> Description: {ability.effect_entries[1].effect}</li>
         </ul>
       </div>
@@ -133,22 +81,13 @@ const Details = () => {
       <div className="bg-slate-500 m-5 rounded-lg">
         <h2 className="text-center text-2xl  underline font-bold">List of Pokemon With this ability</h2>
         <div className="Pokemon-with-ab grid grid-cols-5 m-5 p-5 gap-4">
-        
-        
-        {ability.pokemon.map((pokemonList, index) => {
-          return (
-            <div className="all-container gap-4 justify-center">
-              
-                <AbilityPokemonCell
-                  key={index}
-                  id={(pokemonList.pokemon.url.split("/"))[6]}
-                  name={pokemonList.pokemon.name}
-                />
-              
-            </div>
-          
-          );
-        })}
+          {ability.pokemon.map((pokemonList, index) => {
+            return (
+              <div className="all-container gap-4 justify-center">
+                <AbilityPokemonCell key={index} id={pokemonList.pokemon.url.split("/")[6]} name={pokemonList.pokemon.name} />
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
