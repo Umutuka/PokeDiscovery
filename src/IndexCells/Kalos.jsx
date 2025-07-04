@@ -10,9 +10,9 @@ const Kalos = () => {
         {/* Kanto */}
 
         <div className="space-y-5 font-bold flex justify-center items-center p-5 text-2xl">
-          <img src="https://drive.google.com/uc?export=view&id=1GrMZManUBnwpBu7ryEZyrbhhWxiyk7QR" className="w-48 h-46"></img>
+          <img src="https://drive.google.com/thumbnail?id=1GrMZManUBnwpBu7ryEZyrbhhWxiyk7QR" className="w-48 h-46"></img>
 
-          <img src="https://drive.google.com/uc?export=view&id=1gR6g8Luq3GC2BwNKFNffFB_jDYo0N_mM" className="w-28 h-46"></img>
+          <img src="https://drive.google.com/thumbnail?id=1gR6g8Luq3GC2BwNKFNffFB_jDYo0N_mM" className="w-28 h-46"></img>
           <p>
             The Kalos region (Japanese: カロス地方 Kalos region) is a region of the Pokémon world. It was the sixth core series region to be introduced and is the setting of Pokémon X and Y. It is
             shaped like a five-pointed star, with one of its biggest cities being Lumiose City in the north-central part of the region.

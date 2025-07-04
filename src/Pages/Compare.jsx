@@ -32,17 +32,17 @@ const Compare = () => {
         <section className="text-center items-center justify-center flex text-2xl">
           <div className="border flex mr-44">
             {totalStats1 > totalStats2 && totalStats1 > 0 && totalStats2 > 0 ? (
-              <img src="https://drive.google.com/uc?export=view&id=1owCWuwSJopGwqzxnMp38YPKAZ0IdMK-z" className="w-16 m-5"></img>
+              <img src="https://drive.google.com/thumbnail?id=1owCWuwSJopGwqzxnMp38YPKAZ0IdMK-z" className="w-16 m-5"></img>
             ) : (
-              <img src="https://drive.google.com/uc?export=view&id=1XOMefl8l1_Pr_s1RcK_4QfDBrA-q8iXG" className="w-16 m-5"></img>
+              <img src="https://drive.google.com/thumbnail?id=1XOMefl8l1_Pr_s1RcK_4QfDBrA-q8iXG" className="w-16 m-5"></img>
             )}
           </div>
 
           <div className="border flex ml-48">
             {totalStats1 < totalStats2 && totalStats1 > 0 && totalStats2 > 0 ? (
-              <img src="https://drive.google.com/uc?export=view&id=1owCWuwSJopGwqzxnMp38YPKAZ0IdMK-z" className="w-16 m-5"></img>
+              <img src="https://drive.google.com/thumbnail?id=1owCWuwSJopGwqzxnMp38YPKAZ0IdMK-z" className="w-16 m-5"></img>
             ) : (
-              <img src="https://drive.google.com/uc?export=view&id=1XOMefl8l1_Pr_s1RcK_4QfDBrA-q8iXG" className="w-16 m-5"></img>
+              <img src="https://drive.google.com/thumbnail?id=1XOMefl8l1_Pr_s1RcK_4QfDBrA-q8iXG" className="w-16 m-5"></img>
             )}
           </div>
           <div className="border flex"></div>
@@ -50,7 +50,7 @@ const Compare = () => {
 
         <section className="flex m-5 pb-10 mt-16 space-x-10 justify-center items-center">
           <SearchParams0 setTotalStats={setTotalStats1} />
-          <img src="https://drive.google.com/uc?export=view&id=1vaskWfLDyPF7B4Y_WsJ5metEaO9AO17O" className="w-20 h-20 mt-14"></img>
+          <img src="https://drive.google.com/thumbnail?id=1vaskWfLDyPF7B4Y_WsJ5metEaO9AO17O" className="w-20 h-20 mt-14"></img>
           <SearchParams setTotalStats={setTotalStats2} />
         </section>
       </div>

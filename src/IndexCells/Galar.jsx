@@ -10,8 +10,8 @@ const Galar = () => {
         {/* Kanto */}
 
         <div className="space-y-5 font-bold flex justify-center items-center p-5 text-2xl">
-          <img src="https://drive.google.com/uc?export=view&id=1SQguUfwLtAFly8y2PoSYtE0y33QI4TpX" className="w-44 h-46"></img>
-          <img src="https://drive.google.com/uc?export=view&id=1gL2PON7Rk5uEYWK0x90Rd7OIToMuA6e3" className="w-40 h-46"></img>{" "}
+          <img src="https://drive.google.com/thumbnail?id=1SQguUfwLtAFly8y2PoSYtE0y33QI4TpX" className="w-44 h-46"></img>
+          <img src="https://drive.google.com/thumbnail?id=1gL2PON7Rk5uEYWK0x90Rd7OIToMuA6e3" className="w-40 h-46"></img>{" "}
           <p>
             The Galar region is an expansive region, including varied environments such as idyllic countrysides, contemporary cities, and snow-covered mountains. Galar comprises a long mainland area
             as well as an outlying island area, the Isle of Armor, east of the mainland.

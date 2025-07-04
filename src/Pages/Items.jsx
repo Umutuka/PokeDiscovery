@@ -61,7 +61,7 @@ const Items = () => {
 
             <p className="flex">
               {" "}
-              <img src="https://drive.google.com/uc?export=view&id=125xI_1lOGtmD6KbanUQSTLp_rzUKXa66" className="h-72 w-96"></img>
+              <img src="https://drive.google.com/thumbnail?id=125xI_1lOGtmD6KbanUQSTLp_rzUKXa66" className="h-72 w-96"></img>
               Generation 3 greatly expanded on the concept of Berries that was added in Generation 2. They grow in the wild and can be used for HP restoration, status healing and for Pokéblocks. Such
               an example of this would be Oran berries.
               <br /> <br />

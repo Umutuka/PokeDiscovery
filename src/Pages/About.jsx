@@ -34,7 +34,7 @@ const About = () => {
           <p>The creator is currently a recent graduate from university and goes by the name Umut Eroglulari. Below are his information.</p>
 
           <div className="border flex bg-slate-400 rounded-lg shadow-lg">
-            <img className="w-56 bg-slate-600 p-10 border rounded-xl" src="https://drive.google.com/uc?export=view&id=1GZ1IX6ekHP7_XYDMjTHdoauCQF3N0UI1"></img>
+            <img className="w-56 bg-slate-600 p-10 border rounded-xl" src="https://drive.google.com/thumbnail?id=1GZ1IX6ekHP7_XYDMjTHdoauCQF3N0UI1"></img>
             <ul className="text-3xl m-5 space-y-5">
               <li>Name : Umut Eroglulari</li>
               <li>Age: 22</li>
@@ -50,11 +50,11 @@ const About = () => {
               There were various tools that I used when creating this website. These include HTML, CSS , Javascript , React , TailwindCSS and Vite. In short, it was mostly a Front-end Project I
               created and will forever be in development because of Vast information the pokemon games bring. Unless more developers are keen in the websites development!
             </p>
-            <img className="mx-auto my-auto mt-16" src="https://drive.google.com/uc?export=view&id=1atw9lGLmngYBQsN1vp8DK3VXr4hwzYNP"></img>
+            <img className="mx-auto my-auto mt-16" src="https://drive.google.com/thumbnail?id=1atw9lGLmngYBQsN1vp8DK3VXr4hwzYNP"></img>
             <section className="flex justify-center m-10 items-center">
-              <img className="w-56" src="https://drive.google.com/uc?export=view&id=1xOxxRJCZKHVO6fC9wzoOXcKcRrXgv5Wj"></img>
-              <img className="w-56" src="https://drive.google.com/uc?export=view&id=1CuctT_7GZY7r6Sbo7tZPVX-F639n8Noi"></img>
-              <img className="w-56" src="https://drive.google.com/uc?export=view&id=1FqYawlm33KMu8b7i8NtQuWN6Q3vX32j2"></img>
+              <img className="w-56" src="https://drive.google.com/thumbnail?id=1xOxxRJCZKHVO6fC9wzoOXcKcRrXgv5Wj"></img>
+              <img className="w-56" src="https://drive.google.com/thumbnail?id=1CuctT_7GZY7r6Sbo7tZPVX-F639n8Noi"></img>
+              <img className="w-56" src="https://drive.google.com/thumbnail?id=1FqYawlm33KMu8b7i8NtQuWN6Q3vX32j2"></img>
             </section>
           </div>
 

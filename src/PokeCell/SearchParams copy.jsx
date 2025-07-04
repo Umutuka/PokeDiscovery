@@ -29,7 +29,7 @@ const SearchParams0 = ({ setTotalStats }) => {
           <input id="selectedPoke" value={selected} placeholder="Name" onChange={(e) => setSelected(e.target.value)} className="border rounded-lg pt-2 text-2xl mb-2" />
 
           <button>
-            <img src="https://drive.google.com/uc?export=view&id=1no3dfojKSfFdB25lrya6jmVZlwleKYUs" className="w-8 hover:animate-spin"></img>
+            <img src="https://drive.google.com/thumbnail?id=1no3dfojKSfFdB25lrya6jmVZlwleKYUs" className="w-8 hover:animate-spin"></img>
           </button>
         </label>
       </form>

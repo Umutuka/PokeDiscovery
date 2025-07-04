@@ -27,7 +27,7 @@ const Navbar = () => {
     <div className="border-b-3 mx-auto flex h-16 items-center justify-between main-menu shadow-2xl">
       <div className="w-1/4 lg:w-auto">
         <h1 className="flex cursor-pointer text-white mr-5 items-center pb-1 font-mono text-3xl font-bold">
-          <img src="https://drive.google.com/uc?export=view&id=1CIJ0_IlNvXJOo74VYgEqPzKvZ6pLHdnS" className="w-12 h-12 p-1"></img>
+          <img src="https://drive.google.com/thumbnail?id=1CIJ0_IlNvXJOo74VYgEqPzKvZ6pLHdnS" className="w-12 h-12 p-1"></img>
           <Link to="/">PokeDiscovery </Link>
         </h1>
       </div>
@@ -53,9 +53,6 @@ const Navbar = () => {
           <li className="cursor-pointer p-12 font-mono text-2xl hover:text-[purple]">
             <Link to="/About">About</Link>
           </li>
-          <li className="cursor-pointer p-12 font-mono text-2xl hover:text-[purple]">
-            <Link to="/Contact">Contact</Link>
-          </li>
         </ul>
       </nav>
 
@@ -65,7 +62,7 @@ const Navbar = () => {
 
       <div className={!nav ? "fixed left-0 z-10 top-0 w-70% md:w-1/3 border-r border-r-gray-900 bg-[#000000] duration-500 ease-in-out" : "fixed left-[-100%]"}>
         <h1 className="m-4 flex w-full text-3xl font-mono font-bold text-white">
-          <img src="https://drive.google.com/uc?export=view&id=1CIJ0_IlNvXJOo74VYgEqPzKvZ6pLHdnS" className="w-10 h-10"></img>
+          <img src="https://drive.google.com/thumbnail?id=1CIJ0_IlNvXJOo74VYgEqPzKvZ6pLHdnS" className="w-10 h-10"></img>
           PokeDiscovery
         </h1>
         <ul className="p-4 uppercase ">
@@ -90,9 +87,6 @@ const Navbar = () => {
           </li>
           <li className="border-b border-gray-600 p-4 font-mono text-slate-200">
             <Link to="/About">About</Link>
-          </li>
-          <li className="border-b border-gray-600 p-4 font-mono text-slate-200">
-            <Link to="/Contact">Contact</Link>
           </li>
         </ul>
       </div>

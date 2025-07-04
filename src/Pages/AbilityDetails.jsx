@@ -37,7 +37,7 @@ const Details = () => {
     console.log({ id });
   }, []);
 
-  if (isLoading) return <img src="https://drive.google.com/uc?export=view&id=1mSItftGDMZL57v0mloTsSLbuBv9NM_0I" className="animate-spin block m-56 ml-auto mr-auto w-1/2"></img>;
+  if (isLoading) return <img src="https://drive.google.com/thumbnail?id=1mSItftGDMZL57v0mloTsSLbuBv9NM_0I" className="animate-spin block m-56 ml-auto mr-auto w-1/2"></img>;
 
   if (error) return <p>Error: {error.message}</p>;
 
